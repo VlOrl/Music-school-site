@@ -1,0 +1,250 @@
+html {
+    margin-top: 0px !important;
+}
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+a{
+    text-decoration: none;
+    color: #212121;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1400px;
+    padding: 10px;
+    
+    margin: 0 auto;
+}
+.header{
+    background-color: #000;
+
+}
+.header_inner{
+    display: flex;
+    position: relative;
+    z-index: 3;
+    justify-content: space-between;
+    color: #ffff;
+}
+.list_item{
+    display: flex;
+}
+.href_text_menu{
+    color: #fff;
+    padding-right: 40px;
+}
+.header_text_items{
+    margin-top: 50px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+.menu,
+.btn_header{
+    padding-top: 70px;
+}
+.href_btn_header{
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+.application_title{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 60px;
+}
+.items_input{
+        display: flex;
+    justify-content: center;
+}
+form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 90px 40px;
+    width: 600px;
+    background-color: #FFD600;
+border-radius: 20px;
+}
+
+input{
+    font-size: 36px;
+
+    background: none;
+    border-width: 0px 0px 1px 0px;
+}
+.block_input_application{
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: #000;
+}
+.hrefs_footer{
+    color: #fff;
+}
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.hrefs_footer{
+    font-size: 24px;
+    padding-top: 50px;
+}
+.adress_header_main{
+    padding-bottom: 20px;
+    
+}
+.text_adress_header{
+    padding-left: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+.adress_header_main{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.burger_header{
+    display: none;
+}
+.href_btn_application{
+    background-color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.btn_application{
+    margin-top: 50px;
+}
+@media(max-width:954px){
+    .footer_inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width:892px){
+    .phone_header {
+        font-size: 28px;
+    }
+}
+@media(max-width:835px){
+    .header_inner{
+        flex-wrap: wrap;
+    }
+    .btn_header{
+        padding-left: 40%;
+        padding-bottom: 30px;
+    }
+
+}
+@media(max-width:637px){
+    .menu{
+        display: none;
+    }
+    .input_tabl {
+        width: 471px;
+    }
+    .btn_input {
+        margin-left: 33px;
+    }
+    .burger_header{
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        display: block;
+        top: 50px;
+    }
+    .burger_header::before,
+    .burger_header::after{
+        content: '';
+        background-color: #FFBE35;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    .burger_header::before{
+        top: 0;
+    }
+    .burger_header::after{
+        bottom: 0;
+    }
+    .burger_header span{
+        position: absolute;
+        background-color: #FFBE35;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+
+    }
+}
+@media(max-width:564px){
+    .block_input_application {
+        padding-left: 0px;
+    }
+    input {
+        font-size: 26px;
+    }
+    form {
+        margin-top: 30px;
+        margin-bottom: 35px;
+        padding: 70px 30px;
+
+    }
+
+}
+@media(max-width:400px){
+    .block_input_application {
+        padding-left: 0px;
+    }
+    input {
+        font-size: 22px;
+    }
+    form {
+        padding: 70px 17px;
+    }
+    .application_title {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 60px;
+    }
+    .href_btn_application {
+        font-size: 24px;
+    }
+}
+@media(max-width:352px){
+    .phone_header {
+        font-size: 22px;
+    }
+    .btn_header{
+        padding-left: 20%;
+
+    }
+}
