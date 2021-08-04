@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="contacts.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_content">
+            <div class="container">
+                <div class="header_inner">
+                    <img src="img/logo.svg" alt="" class="logo">
+                    <nav class="menu">
+                        <ul class="list_item">
+                            <li class="link_item_menu"><a href="index.html" class="href_text_menu">Головна</a></li>
+                            <li class="link_item_menu"><a href="course.html" class="href_text_menu">Курс</a></li>
+                            <li class="link_item_menu"><a href="contacts.html" class="href_text_menu">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <div class="burger_header">
+                        <span></span>
+                    </div>
+                    <div class="btn_header"><a href="#" class="href_btn_header">Пробне заняття</a></div>
+                </div>
+            </div>
+    </header>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts_inner">
+                <div class="title_contacts">Контакти </div>
+                <div class="adress_block">
+                    <div class="left_adress_block">
+                        <div id="map"></div>
+                    </div>
+                    <div class="right_adress_block">
+                        <div class="adress_header_main">
+                            <img src="img/footer_adress.svg" alt="">
+                            <div class="text_adress_contacts">вул. Златоустівська 2/4,<br> 11 офіс (4 поверх)</div>
+                        </div>
+
+                        <div class="phone_right_adress">+38(099)413-59-60</div>
+
+                        <div class="btn_contacts"><a href="#" class="href_btn_contacts">Записатись</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <img src="img/logo.svg" alt="" class="footer_logo">
+                <div class="hrefs_footer">
+                    <div class="tel_footer">+38(099)413-59-60</div>
+                    <div class="mail_footer">come.together.place@gmail. com</div>
+                </div>
+
+                <div class="adress_header_main">
+                    <img src="img/footer_adress.svg" alt="">
+                    <div class="text_adress_header">вул. Златоустівська 2/4,<br> 11 офіс (4 поверх)</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // function initMap(){
+        //     var opt ={
+        //         center: {lat: 49.980644,  lng: 36.243644,}
+        //         zoom: 4
+        //     }
+        // }
+
+        // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 49.980644, lng: 36.243644 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+    </script>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0IwI5DsIanCKA0iKCcAxRqrXY-gXj34g&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
+</body>
